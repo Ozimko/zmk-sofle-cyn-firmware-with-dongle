@@ -40,41 +40,49 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
+            layers = <0>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <45 46>;
+            layers = <0>;
         };
 
         star {
             bindings = <&kp STAR>;
             key-positions = <14 15>;
+            layers = <0>;
         };
 
         slash {
             bindings = <&kp SLASH>;
             key-positions = <38 39>;
+            layers = <0>;
         };
 
         backspase {
             bindings = <&kp BACKSPACE>;
             key-positions = <20 21>;
+            layers = <0>;
         };
 
         del {
             bindings = <&kp DEL>;
             key-positions = <20 21 22>;
+            layers = <0>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <13 14>;
+            layers = <0>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <37 38>;
+            layers = <0>;
         };
     };
 
