@@ -39,60 +39,61 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <45 46>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         star {
             bindings = <&kp STAR>;
             key-positions = <14 15>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         slash {
             bindings = <&kp KP_SLASH>;
             key-positions = <38 39>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         backspase {
             bindings = <&kp BACKSPACE>;
             key-positions = <20 19>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         del {
             bindings = <&kp DEL>;
             key-positions = <20 21 19>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <13 14>;
-            layers = <0>;
+            key-positions = <15 16>;
+            layers = <0 1>;
         };
 
         minus {
             bindings = <&kp KP_MINUS>;
-            key-positions = <37 38>;
-            layers = <0>;
+            key-positions = <40 39>;
+            layers = <0 1>;
         };
 
         l_ {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 17>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         r_ {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <18 19>;
+            layers = <0 1>;
         };
     };
 
