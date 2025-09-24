@@ -115,9 +115,9 @@
             display-name = "lower";
             bindings = <
 &kp F1  &kp F2           &kp F3          &kp F4          &kp F5           &kp F6                                                          &kp F7           &kp F8        &kp F9        &kp F10       &kp F11          &kp F12
-&trans  &kp PAUSE_BREAK  &kp HOME        &kp UP_ARROW    &kp PAGE_UP      &kp PAGE_UP                                                     &kp KP_MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS      &kp DELETE
+&trans  &kp PAUSE_BREAK  &kp HOME        &kp UP_ARROW    &kp PAGE_UP      &kp PAGE_UP                                                     &kp KP_MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS      &kp BACKSPACE
 &trans  &kp ESC          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN                                                   &kp KP_ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_NUMBER_0  &kp PIPE
-&trans  &kp EQUAL        &kp END         &kp PLUS        &kp ENTER        &kp LC(LS(LEFT_BRACKET))  &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &kp KP_SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT       &trans
+&trans  &kp EQUAL        &kp END         &kp DELETE      &kp ENTER        &kp LC(LS(LEFT_BRACKET))  &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &kp KP_SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT       &trans
                          &trans          &trans          &trans           &trans                    &trans               &kp LS(FSLH)     &kp SLASH        &kp RETURN    &kp DELETE    &kp ESCAPE
             >;
         };
