@@ -95,6 +95,11 @@
             key-positions = <18 19>;
             layers = <0 1>;
         };
+
+        l2 {
+            bindings = <&mo 2>;
+            key-positions = <53 56>;
+        };
     };
 
     keymap {
@@ -119,6 +124,16 @@
 &trans  &kp ESC          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN                                                          &kp KP_ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_NUMBER_0  &kp PIPE
 &trans  &kp EQUAL        &kp END         &kp DELETE      &kp ENTER        &kp LC(LS(LEFT_BRACKET))  &mt C_VOLUME_DOWN C_MUTE    &kp C_VOLUME_UP  &kp KP_SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT       &trans
                          &trans          &trans          &trans           &trans                    &trans                      &kp LS(FSLH)     &kp SLASH        &kp RETURN    &kp DELETE    &kp ESCAPE
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&trans  &kp LC(LA(LG(KP_NUMBER_1)))  &kp LA(LC(LG(KP_NUMBER_2)))  &kp LA(LC(LG(KP_NUMBER_3)))  &kp LA(LC(LG(KP_NUMBER_4)))  &kp LG(LC(LA(KP_NUMBER_5)))                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                       &trans                       &trans                       &trans                       &trans                                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                       &trans                       &trans                       &trans                       &trans                                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                       &trans                       &trans                       &trans                       &trans                       &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                     &trans                       &trans                       &trans                       &trans                       &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
