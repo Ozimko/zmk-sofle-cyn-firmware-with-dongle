@@ -36,51 +36,15 @@
     combos {
         compatible = "zmk,combos";
 
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
-            layers = <0 1>;
-        };
-
         enter {
             bindings = <&kp ENTER>;
             key-positions = <45 46>;
             layers = <0 1>;
         };
 
-        star {
-            bindings = <&kp STAR>;
-            key-positions = <14 15>;
-            layers = <0 1>;
-        };
-
-        slash {
-            bindings = <&kp KP_SLASH>;
-            key-positions = <38 39>;
-            layers = <0 1>;
-        };
-
         backspase {
             bindings = <&kp BACKSPACE>;
             key-positions = <20 19>;
-            layers = <0 1>;
-        };
-
-        del {
-            bindings = <&kp DEL>;
-            key-positions = <20 21 19>;
-            layers = <0 1>;
-        };
-
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <15 16>;
-            layers = <0 1>;
-        };
-
-        minus {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <40 39>;
             layers = <0 1>;
         };
 
@@ -96,9 +60,21 @@
             layers = <0 1>;
         };
 
-        l2 {
-            bindings = <&mo 2>;
-            key-positions = <56 55>;
+        ent {
+            bindings = <&kp ENTER>;
+            key-positions = <40 39>;
+            layers = <0 1>;
+        };
+
+        spase {
+            bindings = <&kp SPACE>;
+            key-positions = <28 27>;
+        };
+
+        bs2 {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 15>;
+            layers = <0 1>;
         };
     };
 
@@ -108,26 +84,26 @@
         base_layer {
             display-name = "base";
             bindings = <
-&kp GRAVE     &kp N1  &kp N2          &kp N3        &kp N4        &kp N5                              &kp N6  &kp N7   &kp N8           &kp N9     &kp N0    &kp MINUS
-&kp TAB       &kp Q   &kp W           &kp E         &kp R         &kp T                               &kp Y   &kp U    &kp I            &kp O      &kp P     &kp EQUAL
-&kp LEFT_ALT  &kp A   &kp S           &kp D         &kp F         &kp G                               &kp H   &kp J    &kp K            &kp L      &kp SEMI  &kp SQT
-&kp ESCAPE    &kp Z   &kp X           &kp C         &kp V         &kp B   &kp ENTER    &kp BACKSPACE  &kp N   &kp M    &kp COMMA        &kp DOT    &kp FSLH  &kp RSHFT
-                      &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp LCTRL    &kp SPACE      &mo 1   &kp DEL  &kp PAUSE_BREAK  &kp RCTRL
+&kp GRAVE     &kp N1  &kp N2          &kp N3        &kp N4        &kp N5                                                     &kp N6  &kp N7   &kp N8           &kp N9           &kp N0    &kp MINUS
+&kp TAB       &kp Q   &kp W           &kp E         &kp R         &kp T                                                      &kp Y   &kp U    &kp I            &kp O            &kp P     &kp EQUAL
+&kp LEFT_ALT  &kp A   &kp S           &kp D         &kp F         &kp G                                                      &kp H   &kp J    &kp K            &kp L            &kp SEMI  &kp SQT
+&kp ESCAPE    &kp Z   &kp X           &kp C         &kp V         &kp B   &mt ENTER LEFT_BRACE    &mt BACKSPACE RIGHT_BRACE  &kp N   &kp M    &kp COMMA        &kp DOT          &kp FSLH  &kp RSHFT
+                      &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp LCTRL               &kp SPACE                  &mo 2   &kp DEL  &kp PAUSE_BREAK  &kp RIGHT_SHIFT
             >;
         };
 
         lower_layer {
             display-name = "lower";
             bindings = <
-&kp F1  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                                  &kp F7           &kp F8        &kp F9        &kp F10       &kp F11          &kp F12
-&trans  &kp KP_SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_ASTERISK                                         &kp KP_MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS      &kp BACKSPACE
-&trans  &kp KP_MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_PLUS                                             &kp KP_ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_NUMBER_0  &kp PIPE
-&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp KP_SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT       &trans
-                      &trans        &trans        &trans        &trans           &trans              &kp LS(FSLH)       &kp SLASH        &kp RETURN    &kp DELETE    &trans
+&kp F1  &kp F2     &kp F3          &kp F4        &kp F5      &kp F6                                                        &kp F7     &kp F8           &kp F9           &kp F10                 &kp F11        &kp F12
+&trans  &trans     &trans          &trans        &trans      &trans                                                        &trans     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9         &kp BACKSPACE  &trans
+&trans  &trans     &kp LS(LC(S))   &kp KP_SLASH  &kp N8      &kp KP_MULTIPLY                                               &trans     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6         &trans         &kp PIPE
+&trans  &kp LS(Z)  &kp LS(X)       &kp KP_MINUS  &kp ENTER   &kp KP_PLUS      &kp LEFT_BRACKET          &kp RIGHT_BRACKET  &trans     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3         &trans         &trans
+                   &kp LEFT_SHIFT  &kp DEL       &kp ESCAPE  &trans           &kp LS(LC(LEFT_BRACE))    &kp LS(FSLH)       &kp SLASH  &kp KP_NUMBER_0  &kp KP_DOT       &kp LS(LC(LEFT_BRACE))
             >;
         };
 
-        layer_2 {
+        media {
             bindings = <
 &trans  &kp LC(LA(LG(KP_NUMBER_1)))  &kp LA(LC(LG(KP_NUMBER_2)))  &kp LA(LC(LG(KP_NUMBER_3)))  &kp LA(LC(LG(KP_NUMBER_4)))  &kp LG(LC(LA(KP_NUMBER_5)))                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans                       &trans                       &trans                       &trans                       &trans                                         &trans  &trans  &trans  &trans  &trans  &trans
